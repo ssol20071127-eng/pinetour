@@ -9,7 +9,6 @@
   padding: 0;
   font-family: "Inter", sans-serif;
 }
-
 .hero {
   width: 100vw;
   height: 100vh;
@@ -96,11 +95,16 @@
 }
 
 .location {
-  position: absolute;
   width: 100%;
-  z-index: -1;
+  background-image: url(location.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  padding: 65px 119px 60px 119px;
+  font-size: 20px;
+  column-gap: 40px;
 }
-
 .photo {
   width: 275.49px;
   height: 370px;
@@ -109,14 +113,16 @@
 
 .flex {
   display: flex;
-  justify-content: space-around;
-  height: 500px;
-  padding: 65px 119px 60px 119px;
+  justify-content: center;
   font-size: 20px;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .card {
   position: relative;
+  height: 370px;
+  width: 275.49px;
 }
 .card p {
   position: absolute;
@@ -144,9 +150,10 @@
   width: 100%;
   background-image: url(roadmap.png);
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .roadmap_header {
@@ -248,6 +255,54 @@
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 20px;
+}
+
+.terkh-position {
+  position: absolute;
+  top: 520px;
+  left: 890px;
+  width: 34px;
+  height: 34px;
+}
+
+.khorgo-position {
+  top: 420px;
+  left: 790px;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+}
+
+.khuvsgul-position {
+  top: 230px;
+  left: 749px;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+}
+
+.sukhbaatar-position {
+  top: 450px;
+  left: 1167px;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+}
+
+.amarbaysgalant-position {
+  top: 290px;
+  left: 990px;
+  position: absolute;
+  height: 34px;
+}
+
+.place-img {
+  z-index: 20;
+  width: 245px;
+  height: 245px;
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 .footer {
