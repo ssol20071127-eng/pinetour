@@ -164,7 +164,11 @@
   display: flex;
   margin-bottom: 20px;
 }
-
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .center {
   display: flex;
   align-items: center;
@@ -205,6 +209,22 @@
   color: #090908;
   margin-bottom: 20px;
 }
+.list-card-Sukhbaatar:hover {
+  border: 5px solid white;
+}
+.list-card-Sukhbaatar:hover > .place-img-sukhbaatar-position {
+  display: block;
+}
+.place-img-sukhbaatar-position {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  top: 350px;
+  left: 1700px;
+  z-index: 2;
+}
 
 .align-center {
   display: flex;
@@ -234,12 +254,45 @@
   margin-bottom: 20px;
 }
 
+.list-card-Amarbaysgalant:hover {
+  border: 5px solid white;
+}
+.list-card-Amarbaysgalant:hover > .place-img-Amarbaysgalant-position {
+  display: block;
+}
+.place-img-Amarbaysgalant-position {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  top: 250px;
+  left: 1480px;
+  z-index: 2;
+}
+
 .list-card-Khorgo {
   background-color: rgba(170, 216, 215, 0.8);
   font-size: 24px;
   font-weight: 500;
   color: #090908;
   margin-bottom: 20px;
+}
+.list-card-Khorgo:hover {
+  border: 5px solid white;
+}
+.list-card-Khorgo:hover > .place-img-Khorgo-position {
+  display: block;
+}
+.place-img-Khorgo-position {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  top: 350px;
+  left: 1150px;
+  z-index: 2;
 }
 
 .list-card-Terkh {
@@ -249,6 +302,22 @@
   margin-bottom: 20px;
   background-color: rgba(139, 192, 189, 0.8);
 }
+.list-card-Terkh:hover {
+  border: 5px solid white;
+}
+.list-card-Terkh:hover > .place-img-Terkh-position {
+  display: block;
+}
+.place-img-Terkh-position {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  top: 480px;
+  left: 1350px;
+  z-index: 2;
+}
 
 .list-card-Khuvsgul {
   background-color: rgba(151, 204, 224, 0.8);
@@ -256,32 +325,34 @@
   font-weight: 500;
   margin-bottom: 20px;
 }
+.list-card-Khuvsgul:hover {
+  border: 5px solid white;
+}
+
+.list-card-Khuvsgul:hover > .place-img-Khuvsgul-position {
+  display: block;
+}
+
+.place-img-Khuvsgul-position {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  display: none;
+  position: absolute;
+  top: 260px;
+  left: 1178px;
+  z-index: 2;
+}
 
 .terkh-position {
   position: absolute;
-  top: 520px;
-  left: 890px;
+  top: 800px;
+  left: 1350px;
   width: 34px;
   height: 34px;
 }
 
 .khorgo-position {
-  top: 420px;
-  left: 790px;
-  position: absolute;
-  width: 34px;
-  height: 34px;
-}
-
-.khuvsgul-position {
-  top: 230px;
-  left: 749px;
-  position: absolute;
-  width: 34px;
-  height: 34px;
-}
-
-.sukhbaatar-position {
   top: 450px;
   left: 1167px;
   position: absolute;
@@ -289,9 +360,25 @@
   height: 34px;
 }
 
+.khuvsgul-position {
+  top: 265px;
+  left: 1178px;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+}
+
+.sukhbaatar-position {
+  top: 550px;
+  left: 1820px;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+}
+
 .amarbaysgalant-position {
-  top: 290px;
-  left: 990px;
+  top: 350px;
+  left: 1500px;
   position: absolute;
   height: 34px;
 }
