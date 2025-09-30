@@ -158,6 +158,8 @@
 }
 
 .product-bottom {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   justify-content: flex-end;
 }
 .product {
@@ -239,4 +241,29 @@
   padding-block: 2px 16px;
   line-height: 25px;
   font-weight: 400;
+}
+
+.ipadair {
+  background: url(./ipadair.jpg);
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  height: 580px;
+  width: 942px;
+  flex-direction: column;
+  padding-block: 48px 58px;
+}
+
+.ipadair-title-image img {
+  height: 33px;
+  top: 58px;
+}
+
+.ipadair-subhead {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  width: 332px;
+  height: 25px;
 }
