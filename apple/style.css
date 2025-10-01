@@ -1,5 +1,5 @@
 * {
-  margin: 10px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
@@ -157,11 +157,17 @@
   border: solid #0071e3 1px;
 }
 
-.product-bottom {
+.product-container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: 580px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.product-bottom {
   justify-content: flex-end;
 }
+
 .product {
   display: flex;
   text-align: center;
@@ -206,64 +212,45 @@
   border: solid #0071e3 1px;
 }
 
-.button--secondary {
+.button-subhead {
   color: #2997ff;
   border: solid #2997ff 1px;
   background-color: transparent;
 }
 
-.pro {
+.product2 {
   display: flex;
   text-align: center;
   align-items: center;
-  padding-block: 53px;
-  height: 580px;
-  width: 942px;
-
   flex-direction: column;
+  width: 942px;
+  height: 580px;
   padding-block: 48px 58px;
   background: url(./picture2.jpg);
   background-size: cover;
 }
 
-.pro-title-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.product-title-image {
+  width: 161px;
+  height: 61px;
 }
 
-.pro-subhead-dark {
+.product2-subhead {
+  font-size: 18px;
+  padding-block: 2px 16px;
+}
+
+.product2-subhead-dark {
   color: #1d1d1f;
 }
-.pro-subhead {
-  font-size: 18px;
-  color: black;
-  padding-block: 2px 16px;
-  line-height: 25px;
-  font-weight: 400;
-}
 
-.ipadair {
-  background: url(./ipadair.jpg);
-  background-size: cover;
+.product3 {
   display: flex;
-  text-align: center;
   align-items: center;
+  flex-direction: column;
   height: 580px;
   width: 942px;
-  flex-direction: column;
   padding-block: 48px 58px;
-}
-
-.ipadair-title-image img {
-  height: 33px;
-  top: 58px;
-}
-
-.ipadair-subhead {
-  font-size: 18px;
-  line-height: 25px;
-  font-weight: 400;
-  width: 332px;
-  height: 25px;
+  background: url(./picture3.jpg);
+  background-size: cover;
 }
