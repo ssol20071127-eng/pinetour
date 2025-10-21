@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  top: 0;
+  z-index: 10;
+  height: 44px;
+  position: fixed;
+  inset-inline: 0;
+  column-gap: 24px;
+  background-color: #f5f5f7;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icon {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-link {
+  font-size: 12px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.header-icons-center {
+  column-gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  font-size: 14px;
+  margin-top: 44px;
+  color: #1d1d1f;
+  padding: 16px 31px;
+  text-align: center;
+  height: 60px;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.ssu {
+  width: 100vw;
+  height: 75px;
+  opacity: 1;
+  background: linear-gradient(
+    90.43deg,
+    #0090f7 0%,
+    #ba62fc 33.33%,
+    #f2416b 66.67%,
+    #f55600 100%
+  );
+  box-shadow: inset 0px -30px 20px 10px white;
+}
+
+.gradient-header {
+  width: 100%;
+}
+
+.store-container {
+  display: flex;
+  padding: 80px 140px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.store-header {
+  column-gap: 32px;
+}
+
+.store-title {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.rainbow-text {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    #0090f7 0%,
+    #ba62fc 50%,
+    #f2416b 100%
+  );
+}
+
+.store-subtitle {
+  color: #6e6e73;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.store-support {
+  display: flex;
+  row-gap: 16px;
+  flex-direction: column;
+}
+
+.support-item {
+  display: flex;
+  column-gap: 16px;
+  justify-content: space-between;
+}
+
+.support-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 999px;
+}
+
+.support-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0066cc;
+}
+
+.products-cards {
+  display: flex;
+  margin-bottom: 60px;
+  padding-inline: 140px;
+}
+
+.product-card {
+  padding: 16px 8px;
+}
+
+.product-card-image {
+  width: 120px;
+  height: 78px;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-title {
+  font-size: 14px;
+  color: #1d1d1f;
+  margin-top: 18px;
+  font-weight: 700;
+  text-align: center;
+}
