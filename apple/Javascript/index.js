@@ -1,4 +1,4 @@
-const list = document.querySelector(".list");
+const list = document.querySelector(".tasks-yet");
 const input = document.querySelector("input");
 const addBtn = document.querySelector(".create-btn");
 const buttons = document.querySelectorAll(".buttons button");
@@ -10,7 +10,7 @@ let id = 1;
 
 const ListItem = (item) => {
   return `
-    <div class="item">
+    <div class="item" data-id="${item.id}">
       <input class="checkbox" type="checkbox" ${item.isDone ? "checked" : ""} />
       <p>${item.text}</p>
       <button class="delete-btn">Delete</button>
@@ -19,19 +19,21 @@ const ListItem = (item) => {
 };
 
 addBtn.addEventListener("click", () => {
+  const text = input.value.trim();
+  if (text === "") return; // Prevent adding empty tasks
+
   content.push({
     id: id,
-    text: input.value,
+    text: text,
     isDone: false,
   });
 
   id++;
-
-  console.log(content);
+  input.value = ""; // Clear input after adding
 
   render();
 });
-
+  
 buttons.forEach((btn, i) => {
   btn.addEventListener("click", () => {
     buttons.forEach((button) => {
@@ -71,17 +73,22 @@ const addListeners = () => {
   const deleteBtns = document.querySelectorAll(".delete-btn");
 
   deleteBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      content = content.filter((item, index) => index !== i);
+    btn.addEventListener("click", (e) => {
+      const id = Number(e.target.closest(".item").dataset.id);
+      content = content.filter((item) => item.id !== id);
       render();
     });
   });
 
   const checkboxes = document.querySelectorAll(".checkbox");
 
-  checkboxes.forEach((checkbox, i) => {
-    checkbox.addEventListener("click", () => {
-      content[i].isDone = !content[i].isDone;
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("click", (e) => {
+      const id = Number(e.target.closest(".item").dataset.id);
+      const item = content.find((item) => item.id === id);
+      if (item) {
+        item.isDone = !item.isDone;
+      }
       render();
     });
   });
